@@ -1,0 +1,49 @@
+:root {
+  --mainFont: "Roboto", serif;
+  --tittleFont: "Archivo Black", sans-serif;
+  --colorOne: #000000;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1 rem = 10px */
+  scroll-behavior: smooth;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--mainFont);
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 4rem;
+  color: white;
+  font-family: var(--tittleFont);
+  text-align: center;
+}
+
+h2 {
+  font-size: 3rem;
+  color: white;
+  font-family: var(--tittleFont);
+  text-align: center;
+}
+
+h3 {
+  font-size: 3rem;
+  font-family: var(--tittleFont);
+  text-align: center;
+  margin: 1rem 0 1rem 0;
+}
+
+.container {
+  max-width: 120rem;
+  width: 90%;
+  margin: 0 auto;
+}

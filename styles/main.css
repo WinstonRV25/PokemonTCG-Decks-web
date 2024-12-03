@@ -1,0 +1,156 @@
+.main {
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 1rem;
+  
+}
+
+.main h2 {
+  text-align: center;
+  color: white;
+  background-color: var(--colorOne);
+  margin-top: 0;
+  padding: 1rem;
+}
+
+.section-one {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: end;
+  align-content: end;
+  margin-bottom: 1rem;
+}
+
+
+.section-one-item {
+  display: flex;
+  justify-content: center;
+}
+
+
+.card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  width: 20rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  border-radius: 1rem;
+
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+}
+
+.card p {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--colorOne);
+}
+
+.card-button {
+  padding: 1rem 4rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-size: 14px;
+  background-color: var(--colorOne);
+  border-radius: 1rem;
+  border: solid 1px var(--colorOne);
+  color: white;
+  cursor: pointer;
+
+  transition: background-color 0.6s,
+              color 0.6s;
+}
+
+.card-button:hover {
+  background-color: white;
+  color: var(--colorOne);
+} 
+
+@media (max-width: 700px) {
+  .section-one {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (min-width: 1000px) {
+  .card {
+    width: 20rem;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .card {
+    width: 14rem;
+  }
+
+}
+
+/*Section two*/
+
+.metadeck-one {
+  background-image: url(../images/sections/pikachu.jpg);
+}
+
+.metadeck-two {
+  background-image: url(../images/sections/mewtwo.jpg);
+}
+
+.metadeck-three {
+  background-image: url(../images/sections/charizard.jpg);
+}
+
+.metadeck-one,
+.metadeck-two,
+.metadeck-three {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.section-two-info {
+  height: 30rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+
+}
+
+
+.info-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+ 
+}
+
+
+.info-button {
+  padding: 1rem 4rem;
+  font-size: 2rem;
+  background-color: var(--colorOne);
+  border-radius: 1rem;
+  border: 1px solid var(--colorOne);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.4s,
+              color 0.4s;
+}
+
+.info-button:hover {
+  background-color: transparent;
+  color: var(--colorOne);
+}
+
+
